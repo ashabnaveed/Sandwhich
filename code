@@ -1,0 +1,67 @@
+#Ashab Naveed 
+#Computing Science 10
+#Sandwich
+#Henry Wise Wood High School
+#2021-22 Semester 1
+#October 5th, 2021
+
+
+#inputs from the user
+size = input("What size of sandwich (S or L):").lower()
+cheese = input("Would you like to add cheese (Y or N):").lower()
+tomato = input("Would you like to add tomato (Y or N):").lower()
+lettuce = input("Would you like to add lettuce (Y or N):").lower()
+onion = input("Would you like to add onion (Y or N):").lower()
+ketchup = input("Would you like to add ketchup (Y or N):").lower()
+mayonnaise = input("Would you like to add mayonnaise (Y or N):").lower()
+mustard = input("Would you like to add mustard (Y or N):").lower()
+
+#starting prices
+S = 2.50
+L = 4.00
+C = 0.50
+T = 0.25
+Le = 0.10
+O = 0.10
+
+#takes the user inputs and redefines the variable values to accurately sum the total
+if size == 'l':
+  #print('large')
+  S = 0
+else:
+  #print('small')
+  L = 0
+
+if cheese == 'y':
+  #print('cheese')
+  C = 0.50
+else:
+  #print('no cheese')
+  C = 0
+
+if tomato == 'y':
+  #print('tomato')
+  T = 0.25
+else:
+  #print('no tomato')
+  T = 0 
+
+if lettuce == 'y':
+  #print('lettuce')
+  Le = 0.10
+else:
+  #print('no lettuce')
+  Le = 0
+
+if onion == 'y':
+  #print('onion')
+  O = 0.10
+else:
+  #print('no onion')
+  O = 0
+
+#sums the cost after defining the new variables
+total = (L + S + C + T + Le + O)
+
+#formats to second decimal place
+print("\n{:0.2f}\n".format(total))
